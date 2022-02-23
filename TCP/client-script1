@@ -1,0 +1,31 @@
+Script started on 2021-12-05 15:42:52-0500
+ajchayes@cisc450:~/cisc450_projects/project_2$ make
+make: Nothing to be done for 'all'.
+ajchayes@cisc450:~/cisc450_projects/project_2$ ./client[K[K[K[K[K[Ktcpcline[K[Kent
+Message sent: 1, 48284, 0, *
+
+Message recieved: 1, 48284, 0, *
+Message sent: 1, 48298, 0, *
+
+Message recieved: 2, 48298, 54321, *
+
+Message sent: 1, 48522, 0, *
+
+Message recieved: 1, 48522, 0, *
+
+Message sent: 1, 48564, 0, *
+
+Message recieved: 256, 48564, 0, *
+Message sent: 1, 48575, 0, *
+
+Message recieved: 1, 48575, 0, *
+ajchayes@cisc450:~/cisc450_projects/project_2$ nano T[K[K[K[K[K[Kcat Travel.txt 
+1, 48284, 0, *
+2, 48298, 54321, *
+1, 48522, 0, *
+256, 48564, 0, *
+1, 48575, 0, *
+ajchayes@cisc450:~/cisc450_projects/project_2$ exit
+exit
+
+Script done on 2021-12-05 15:43:16-0500

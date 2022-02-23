@@ -1,0 +1,40 @@
+Script started on 2021-12-05 15:51:10-0500
+ajchayes@cisc450:~/cisc450_projects/project_2$ make
+make: Nothing to be done for 'all'.
+ajchayes@cisc450:~/cisc450_projects/project_2$ makeexitcat Travel.txt [4P./tcpclientcat Travel.txt 
+1, 48284, 0, *
+2, 48298, 54321, *
+1, 48522, 0, *
+256, 48564, 0, *
+1, 48575, 0, *
+ajchayes@cisc450:~/cisc450_projects/project_2$ cat Travel.txt make[Kexitcat Travel.txt [4P./tcpclient
+Message sent: 2, 48284, 0, *
+
+Message recieved: 2, 48284, 10, *
+Message sent: 3, 48298, 54321, Hayes-Jiang
+
+Message recieved: 3, 48298, 54321, Long-Island
+Message sent: 2, 48522, 0, *
+
+Message recieved: 2, 48522, 63829, *
+
+Message sent: 257, 48564, 0, *
+
+Message recieved: 256, 48564, 0, *
+Message sent: 2, 48575, 0, *
+
+Message recieved: 2, 48575, 4444, *
+Message sent: 2, 48720, 0, *
+
+Message recieved: 1, 48720, 0, *
+ajchayes@cisc450:~/cisc450_projects/project_2$ ./tcpclientcat Travel.txt 
+2, 48284, 10, *
+3, 48298, 54321, Long-Island
+2, 48522, 63829, *
+256, 48564, 0, *
+2, 48575, 4444, *
+1, 48720, 0, *
+ajchayes@cisc450:~/cisc450_projects/project_2$ exit
+exit
+
+Script done on 2021-12-05 15:51:41-0500
