@@ -1,0 +1,95 @@
+Script started on 2021-10-21 18:35:16-0400
+ajchayes@cisc450:~/cisc450_projects$ ls-l
+ls-l: command not found
+ajchayes@cisc450:~/cisc450_projects$ ls -l
+total 12
+-rwxr-xr-x 1 ajchayes ajchayes  189 Oct 21 17:58 Makefile
+-rw-rw-r-- 1 ajchayes ajchayes    0 Oct 21 18:35 server_output
+-rw-r--r-- 1 ajchayes ajchayes 6596 Oct 21 18:34 udpclient.c
+-rw-r--r-- 1 ajchayes ajchayes 4667 Oct 21 18:19 udpserver.c
+ajchayes@cisc450:~/cisc450_projects$ make clean
+rm udpclient udpserver
+rm: cannot remove 'udpclient': No such file or directory
+rm: cannot remove 'udpserver': No such file or directory
+Makefile:12: recipe for target 'clean' failed
+make: *** [clean] Error 1
+ajchayes@cisc450:~/cisc450_projects$ make all
+/usr/bin/gcc udpclient.c -o udpclient
+/usr/bin/gcc udpserver.c -o udpserver
+ajchayes@cisc450:~/cisc450_projects$ make clea
+make: *** No rule to make target 'clea'.  Stop.
+ajchayes@cisc450:~/cisc450_projects$ make lc[K[Kclean
+rm udpclient udpserver
+ajchayes@cisc450:~/cisc450_projects$ ls -l
+total 12
+-rwxr-xr-x 1 ajchayes ajchayes  189 Oct 21 17:58 Makefile
+-rw-rw-r-- 1 ajchayes ajchayes    0 Oct 21 18:35 server_output
+-rw-r--r-- 1 ajchayes ajchayes 6596 Oct 21 18:34 udpclient.c
+-rw-r--r-- 1 ajchayes ajchayes 4667 Oct 21 18:19 udpserver.c
+ajchayes@cisc450:~/cisc450_projects$ make all
+/usr/bin/gcc udpclient.c -o udpclient
+/usr/bin/gcc udpserver.c -o udpserver
+ajchayes@cisc450:~/cisc450_projects$ ls -l
+total 13
+-rwxr-xr-x 1 ajchayes ajchayes   189 Oct 21 17:58 Makefile
+-rw-rw-r-- 1 ajchayes ajchayes     0 Oct 21 18:35 server_output
+-rwxrwxr-x 1 ajchayes ajchayes 13160 Oct 21 18:35 udpclient
+-rw-r--r-- 1 ajchayes ajchayes  6596 Oct 21 18:34 udpclient.c
+-rwxrwxr-x 1 ajchayes ajchayes 12920 Oct 21 18:35 udpserver
+-rw-r--r-- 1 ajchayes ajchayes  4667 Oct 21 18:19 udpserver.c
+ajchayes@cisc450:~/cisc450_projects$ ./udpserver 
+Waiting for incoming messages on port 65100
+
+-------------------------------------------------------------
+Request ID: 1
+Count: 1
+Transmited bytes: 58
+Transmitted packets: 1
+Sequence number sum: 1
+Checksum: 649847
+-------------------------------------------------------------
+-------------------------------------------------------------
+Request ID: 2
+Count: 10
+Transmited bytes: 580
+Transmitted packets: 10
+Sequence number sum: 55
+Checksum: 8476637
+-------------------------------------------------------------
+-------------------------------------------------------------
+Request ID: 3
+Count: 6000
+Transmited bytes: 348000
+Transmitted packets: 6000
+Sequence number sum: 18003000
+Checksum: 4901818687
+-------------------------------------------------------------
+-------------------------------------------------------------
+Request ID: 4
+Count: 4000
+Transmited bytes: 232000
+Transmitted packets: 4000
+Sequence number sum: 8002000
+Checksum: 3287914128
+-------------------------------------------------------------
+-------------------------------------------------------------
+Request ID: 5
+Count: 1
+Transmited bytes: 58
+Transmitted packets: 1
+Sequence number sum: 1
+Checksum: 879884
+-------------------------------------------------------------
+-------------------------------------------------------------
+Request ID: 6
+Count: 10
+Transmited bytes: 580
+Transmitted packets: 10
+Sequence number sum: 55
+Checksum: 8002099
+-------------------------------------------------------------
+^C
+ajchayes@cisc450:~/cisc450_projects$ exit
+exit
+
+Script done on 2021-10-21 18:39:49-0400

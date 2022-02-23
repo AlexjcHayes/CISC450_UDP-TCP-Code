@@ -1,0 +1,91 @@
+Script started on 2021-10-21 18:36:18-0400
+ajchayes@cisc450:~/cisc450_projects$ ls -l
+total 13
+-rw-rw-r-- 1 ajchayes ajchayes     0 Oct 21 18:36 client_output
+-rwxr-xr-x 1 ajchayes ajchayes   189 Oct 21 17:58 Makefile
+-rw-rw-r-- 1 ajchayes ajchayes     0 Oct 21 18:35 server_output
+-rwxrwxr-x 1 ajchayes ajchayes 13160 Oct 21 18:35 udpclient
+-rw-r--r-- 1 ajchayes ajchayes  6596 Oct 21 18:34 udpclient.c
+-rwxrwxr-x 1 ajchayes ajchayes 12920 Oct 21 18:35 udpserver
+-rw-r--r-- 1 ajchayes ajchayes  4667 Oct 21 18:19 udpserver.c
+ajchayes@cisc450:~/cisc450_projects$ .[K./cl[K[Kudpclient 
+Enter hostname of server: cisc450
+Enter port number for server: 65100
+Enter the count of how many intergers you would like to request from the server: -1
+Enter the count of how many intergers you would like to request from the server: 90000
+Enter the count of how many intergers you would like to request from the server: 1
+
+--------------------------------------------------------------
+Request ID: 1
+Count: 1
+Recieved bytes: 58
+Recieved packets: 1
+Sequence number sum: 1
+Checksum: 649847
+--------------------------------------------------------------
+Would you like to send another request? y/n: j
+Would you like to send another request? y/n: j
+Would you like to send another request? y/n: d
+Would you like to send another request? y/n: a
+Would you like to send another request? y/n: s
+Would you like to send another request? y/n: d
+Would you like to send another request? y/n: y
+Enter the count of how many intergers you would like to request from the server: 10
+
+--------------------------------------------------------------
+Request ID: 2
+Count: 10
+Recieved bytes: 580
+Recieved packets: 10
+Sequence number sum: 55
+Checksum: 8476637
+--------------------------------------------------------------
+Would you like to send another request? y/n: y
+Enter the count of how many intergers you would like to request from the server: 6000
+
+--------------------------------------------------------------
+Request ID: 3
+Count: 6000
+Recieved bytes: 279212
+Recieved packets: 4814
+Sequence number sum: 16969401
+Checksum: 3929722228
+--------------------------------------------------------------
+Would you like to send another request? y/n: y
+Enter the count of how many intergers you would like to request from the server: 4000
+
+--------------------------------------------------------------
+Request ID: 4
+Count: 4000
+Recieved bytes: 188152
+Recieved packets: 3244
+Sequence number sum: 7505686
+Checksum: 2667072636
+--------------------------------------------------------------
+Would you like to send another request? y/n: y
+Enter the count of how many intergers you would like to request from the server: 1
+
+--------------------------------------------------------------
+Request ID: 5
+Count: 1
+Recieved bytes: 58
+Recieved packets: 1
+Sequence number sum: 1
+Checksum: 879884
+--------------------------------------------------------------
+Would you like to send another request? y/n: y
+Enter the count of how many intergers you would like to request from the server: 10
+
+--------------------------------------------------------------
+Request ID: 6
+Count: 10
+Recieved bytes: 580
+Recieved packets: 10
+Sequence number sum: 55
+Checksum: 8002099
+--------------------------------------------------------------
+Would you like to send another request? y/n: n
+ajchayes@cisc450:~/cisc450_projects$ exit
+exit
+
+Script done on 2021-10-21 18:39:52-0400
